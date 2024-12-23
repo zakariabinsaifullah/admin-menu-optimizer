@@ -36,17 +36,16 @@ jQuery(document).ready(function ($) {
       function (response) {
         if (response.success) {
           $li.find(".menu-title").text(newTitle);
-          Swal.fire({
+
+          // Usage Example
+          AdmoAlertBox.createAlert({
             title: "Success!",
-            text: "Menu title updated successfully!",
-            icon: "success",
-            confirmButtonText: "OK",
-            didClose: () => {
+            text: "Your operation was successful.",
+            type: "success",
+            onConfirm: () => {
               location.reload();
             },
           });
-        } else {
-          Swal.fire("Error", response.data, "error");
         }
       }
     );
@@ -72,17 +71,14 @@ jQuery(document).ready(function ($) {
       },
       function (response) {
         if (response.success) {
-          Swal.fire({
+          AdmoAlertBox.createAlert({
             title: "Success!",
-            text: "Menu order saved successfully!",
-            icon: "success",
-            confirmButtonText: "OK",
-            didClose: () => {
+            text: "Your operation was successful.",
+            type: "success",
+            onConfirm: () => {
               location.reload();
             },
           });
-        } else {
-          Swal.fire("Error", "Failed to save menu order.", "error");
         }
       }
     );

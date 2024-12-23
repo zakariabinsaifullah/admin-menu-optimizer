@@ -146,10 +146,10 @@ final class Admo_Admin_Menu_Optimizer {
     public function enqueue_scripts($hook) {
         if ($hook === 'toplevel_page_admin-menu-optimizer') {
             wp_enqueue_script('sortable-js', ADMO_ASSETS . '/js/sortable.min.js', [], ADMO_VERSION, true);
-            wp_enqueue_script('sweetalert2', ADMO_ASSETS . '/js/sweetalert2.min.js', [], ADMO_VERSION, true);
-            wp_enqueue_script('admo-script', ADMO_ASSETS . '/js/admo-script.js', ['sortable-js', 'jquery', 'sweetalert2'], ADMO_VERSION, true);
+            wp_enqueue_style('alert-box', ADMO_ASSETS . '/css/alertbox.css', [], ADMO_VERSION, 'all');
+            wp_enqueue_script('alert-box', ADMO_ASSETS . '/js/alertbox.js', [], ADMO_VERSION, true);
+            wp_enqueue_script('admo-script', ADMO_ASSETS . '/js/admo-script.js', ['sortable-js', 'jquery', 'alert-box'], ADMO_VERSION, true);
             wp_enqueue_style('admo-style', ADMO_ASSETS . '/css/admo-style.css', [], ADMO_VERSION, 'all');
-            wp_enqueue_style('sweetalert2-style', ADMO_ASSETS . '/css/sweetalert2.min.css', [], ADMO_VERSION, 'all');
             wp_localize_script('admo-script', 'admo_ajax', [
                 'ajax_url' => admin_url('admin-ajax.php'),
                 'nonce'    => wp_create_nonce('admo_nonce'),

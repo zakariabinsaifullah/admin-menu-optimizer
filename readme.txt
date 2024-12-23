@@ -23,7 +23,6 @@ Admin Menu Optimizer allows you to reorder and rename the admin menu items in th
 
 1. Upload the plugin files to `/wp-content/plugins/admin-menu-optimizer` directory, or install the plugin through the WordPress plugins screen directly.
 2. Activate the plugin through the 'Plugins' screen in WordPress
-3. Upload SVG files through the media library as you would with regular images
 
 == Changelog ==
 
