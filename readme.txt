@@ -2,8 +2,8 @@
 Contributors: binsaifullah
 Tags: admin menu reorder, admin menu, admin, admin menu rename, admin menu optimize
 Requires at least: 6.0
-Tested up to: 6.7.1
-Stable tag: 1.0.0
+Tested up to: 6.8
+Stable tag: 1.0.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -25,6 +25,8 @@ Admin Menu Optimizer allows you to reorder and rename the admin menu items in th
 2. Activate the plugin through the 'Plugins' screen in WordPress
 
 == Changelog ==
+= 1.0.1 = 
+* Compatibility check 
 
 = 1.0.0 =
 * Initial release

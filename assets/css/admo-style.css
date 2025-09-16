@@ -65,3 +65,34 @@ span.menu-title {
   font-size: 14px;
   font-weight: 500;
 }
+
+
+.our-products {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 16px;
+    font-weight: 500;
+    margin: 15px 0;
+}
+
+.products-list {
+    display: flex;
+    gap: 8px;
+}
+
+a.product-item {
+    background: #2271b1;
+    color: #fff;
+    font-weight: 400;
+    padding: 6px 12px;
+    text-decoration: none;
+    border-radius: 50px;
+    font-size: 13px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+a.product-item:hover {
+    background: #0c7429;
+}

@@ -2,7 +2,7 @@
 /**
  * Plugin Name: Admin Menu Optimizer
  * Description: Allow you to reorder, rename, admin menu items.
- * Version: 1.0.0 
+ * Version: 1.0.1
  * Author: Zakaria Binsaifullah
  * License: GPLv2 or later
  * License URI: https://www.gnu.org/licenses/gpl-2.0.html
@@ -27,7 +27,7 @@ final class Admo_Admin_Menu_Optimizer {
         * 
         * @var string
         */
-        const VERSION = '1.0.0';
+        const VERSION = '1.0.1';
 
         /**
          * Instance of this class.
@@ -99,6 +99,22 @@ final class Admo_Admin_Menu_Optimizer {
         ?>
         <div class="wrap">
             <h1><?php esc_html_e('Admin Menu Optimizer', 'admin-menu-optimizer'); ?></h1>
+            <div class="our-products">
+                <span class="products-label">
+                    <?php esc_html_e('Our Products', 'admin-menu-optimizer'); ?>
+                </span>
+                <div class="products-list">
+                    <a href="https://gutslider.com/" target="_blank" class="product-item">
+                        <?php esc_html_e('GutSlider', 'admin-menu-optimizer'); ?>
+                    </a>
+                    <a href="https://gmap.gutenbergkits.com/" target="_blank" class="product-item">
+                        <?php esc_html_e('Gmap', 'admin-menu-optimizer'); ?>
+                    </a>
+                    <a href="https://accordion.gutenbergkits.com/" target="_blank" class="product-item">
+                        <?php esc_html_e('Easy Accordion', 'admin-menu-optimizer'); ?>
+                    </a>
+                </div>
+            </div>
             <p><?php esc_html_e('Drag and drop to reorder admin menu items. You can also rename items. Click "Save Changes" to apply.', 'admin-menu-optimizer'); ?></p>
             <ul id="admo-menu-list">
                 <?php
